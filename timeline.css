@@ -1,5 +1,6 @@
 body {
   background-color: #474e5d;
+  font-family: arial;
 }
 .timeline {
   position: absolute;
@@ -73,26 +74,40 @@ body {
 }
 
 .left-content {
-  left: -178px;
-  width: 100px;
+  left: -278px;
+  width: 200px;
   top: 25px;
-  position: relative;
+  position: absolute;
   padding: 20px 30px;
   background-color: white;
   border-radius: 6px;
 }
 
 .right-content {
-  right: -178px;
-  width: 100px;
+  right: -280px;
+  width: 200px;
   top: 25px;
-  position: relative;
+  position: absolute;
   padding: 20px 30px;
   background-color: white;
   border-radius: 6px;
 }
-
+h1 {
+  text-align: center;
+}
 .img-style1 {background-image: url("./images/the-mona-lisa.jpg");}
 .img-style2 {background-image: url("./images/the-last-supper.jpg");}
 .img-style3 {background-image: url("./images/salvador-mundi.jpg");}
 .img-style4 {background-image: url("./images/the-virgin-and-child.jpg");}
+.img-style5 {background-image: url("./images/the-virgin-and-child.jpg");}
+@media only screen and (max-width: 600px) {
+  .right-content {
+    left: -178px;
+  }
+
+  .right::before {
+    left: -20px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+}
