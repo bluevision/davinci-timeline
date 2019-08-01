@@ -10,12 +10,17 @@
           if (e.target !== this) {
             return;
           } else {
-            if($(this).hasClass('img-large')) {
-              $(this).addClass('img').removeClass('img-large');
-            } else {
-              $(this).addClass('img-large').removeClass('img');
-            }
-          }
+              if($(this).hasClass('right-content') || $(this).hasClass('left-content') || $(this).hasClass('timeline')) {
+                return;
+              } else if($(this).hasClass('img-large')) {
+                $(this).addClass('img').removeClass('img-large');
+              } else {
+                $(this).addClass('img-large').removeClass('img');
+              }
+            } 
+              
+            
+          
         });
       });
       </script>
@@ -31,31 +36,31 @@
       <p>Generally thought to be the earliest extant work by Leonardo. The work was traditionally attributed to Verrocchio until 1869. It is now almost universally attributed to Leonardo. </p>
     </div>
   </div>
-  <div class="img img-style2 content2 right">
+  <div class="img img-style2 right">
       <div class="right-content">
         <h3>Ginevra de' Benci (c. 1474-1480)</h3>
         <p>The work was proposed as a Leonardo by Waagen in 1866, and supported by Bode. Early 20th-century scholars were vociferous in their disagreement, but most current critics accept both the authorship and the identity of the sitter.</p>
       </div>
   </div>
-  <div class="img img-style3 content3 left">
+  <div class="img img-style3 left">
       <div class="left-content">
         <h3>Madonna of the Carnation (c. 1472-1478)</h3>
         <p>It is generally accepted as a Leonardo, but has some overpainting possibly by a Flemish artist.</p>
       </div>
   </div>
-  <div class="img img-style4 content4 right">
+  <div class="img img-style4 right">
       <div class="right-content">
         <h3>The Baptism of Christ (c. 1469-1476)</h3>
         <p>Painted by Andrea del Verrocchio, with the angel on the left-hand side by Leonardo.[2] It is generally considered that Leonardo also painted much of the background landscape and the torso of Christ. One of Leonardo's earliest extant works. Vasari's statement that the angel on the left is by Leonardo is confirmed by studies by Bode, Seidlitz and Guthman, and accepted by McCurdy, Wasserman and others.</p>
       </div>
     </div>
-    <div class="img img-style5 content5 left">
+    <div class="img img-style5 left">
       <div class="left-content">
         <h3>Benois Madonna</h3>
         <p>Most critics believe that it coincides with a Madonna mentioned by Leonardo in 1478.</p>
       </div>
     </div>
-    <div class="img img-style6 content6 right">
+    <div class="img img-style6 right">
         <div class="right-content">
           <h3>The Adoration of the Magi (c. 1479-1482)</h3>
           <p>Carlo Pedretti, the greatest da Vinci scholar states that the results are unambiguous: "From what he showed me ... it's clear that Leonardo's original sketch was gone over by an anonymous painter." Pedretti adds that he was surprised, though not disappointed, that the news was finally getting out – "it's extremely important and should be said because it has to be clarified."</p>
