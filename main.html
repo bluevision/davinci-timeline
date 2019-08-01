@@ -6,12 +6,12 @@
       <script type="text/javascript">        
       $(document).ready(function() {
       $('p').hide();
-        $("div").on('click', function(e) {
+        $('div').on('click', function(e) {
           this.element = $('')
           if (e.target !== this) {
             return;
           } else {
-              if($(this).hasClass('timeline')) {
+              if($(this).hasClass('timeline') || $(this).hasClass('left-content') || $(this).hasClass('right-content')) {
                 return;
               } else if($(this).hasClass('img-large')) {
                 $(this).addClass('img').removeClass('img-large').find("p").hide();
@@ -27,7 +27,8 @@
   </head>
   <body>
 
-  <h1>Timeline of works by Leonardo da Vinci (1452 - 1519)</h1>
+  <h1>Timeline of Leonardo da Vinci's Major Extant Works (1452 - 1519)</h1>
+  <h2>All images and information are from <a href="https://en.wikipedia.org/wiki/List_of_works_by_Leonardo_da_Vinci">Wikipedia</a></h2>
 <div class="timeline">
   <div id="image" class="img img-style1 left">
     <div class="left-content">
@@ -50,7 +51,7 @@
   <div class="img img-style4 right">
       <div class="right-content">
         <h3>The Baptism of Christ (c. 1469-1476)</h3>
-        <p>Painted by Andrea del Verrocchio, with the angel on the left-hand side by Leonardo.[2] It is generally considered that Leonardo also painted much of the background landscape and the torso of Christ. One of Leonardo's earliest extant works. Vasari's statement that the angel on the left is by Leonardo is confirmed by studies by Bode, Seidlitz and Guthman, and accepted by McCurdy, Wasserman and others.</p>
+        <p> Painted by Andrea del Verrocchio, with the angel on the left-hand side by Leonardo.[2] It is generally considered that Leonardo also painted much of the background landscape and the torso of Christ. One of Leonardo's earliest extant works. Vasari's statement that the angel on the left is by Leonardo is confirmed by studies by Bode, Seidlitz and Guthman, and accepted by McCurdy, Wasserman and others.</p>
       </div>
     </div>
     <div class="img img-style5 left">
@@ -65,6 +66,12 @@
           <p>Carlo Pedretti, the greatest da Vinci scholar states that the results are unambiguous: "From what he showed me ... it's clear that Leonardo's original sketch was gone over by an anonymous painter." Pedretti adds that he was surprised, though not disappointed, that the news was finally getting out – "it's extremely important and should be said because it has to be clarified."</p>
         </div>
       </div>
+      <div class="img img-style7 left">
+          <div class="left-content">
+            <h3>Saint Jerome in the Wilderness (c. 1480-1482)</h3>
+            <p>Generally accepted as a Leonardo</p>
+          </div>
+        </div>
 </div>
 </body>
 </html>
