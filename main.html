@@ -5,22 +5,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script type="text/javascript">        
       $(document).ready(function() {
-
+      $('p').hide();
         $("div").on('click', function(e) {
+          this.element = $('')
           if (e.target !== this) {
             return;
           } else {
-              if($(this).hasClass('right-content') || $(this).hasClass('left-content') || $(this).hasClass('timeline')) {
+              if($(this).hasClass('timeline')) {
                 return;
               } else if($(this).hasClass('img-large')) {
-                $(this).addClass('img').removeClass('img-large');
+                $(this).addClass('img').removeClass('img-large').find("p").hide();
               } else {
-                $(this).addClass('img-large').removeClass('img');
+                $(this).addClass('img-large').removeClass('img').find("p").show();
               }
             } 
-              
-            
-          
+
         });
       });
       </script>
