@@ -1,14 +1,28 @@
-<script>
-    $(document).ready(function() {
-      $("#timeline").css("color", "blue");
-    });
-  </script>
+
 <DOCTYPE! html>
   <head>
       <link rel="stylesheet" href="timeline.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript">        
+      $(document).ready(function() {
+
+        $("div").on('click', function(e) {
+          if (e.target !== this) {
+            return;
+          } else {
+            if($(this).hasClass('img-large')) {
+              $(this).addClass('img').removeClass('img-large');
+            } else {
+              $(this).addClass('img-large').removeClass('img');
+            }
+          }
+        });
+      });
+      </script>
   </head>
-<main>
-  <h1 id="timeline">Timeline of works by Leonardo da Vinci (1452 - 1519)</h1>
+  <body>
+
+  <h1>Timeline of works by Leonardo da Vinci (1452 - 1519)</h1>
 <div class="timeline">
   <div id="image" class="img img-style1 left">
     <div class="left-content">
@@ -47,5 +61,5 @@
         </div>
       </div>
 </div>
-</main>
+</body>
 </html>
