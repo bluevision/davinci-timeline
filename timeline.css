@@ -4,9 +4,16 @@ body {
   background-color: #667F99;
   font-family: 'Muli', sans-serif;
 }
+#heading {
+  position: absolute;
+  left: 10px;
+  text-align: center;
+}
 .timeline {
   position: absolute;
-  left: 50%;
+  left: 200px;
+  margin-top: 150px;
+  margin-left: 25px;
 }
 
 .timeline::before {
@@ -64,13 +71,14 @@ p {
   content: " ";
   height: 0;
   position: absolute;
-  left: -20px;
+  right: -20px;
   top: 35px;
   width: 0;
   z-index: 1;
   border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+
 }
 
 .right::before {
@@ -87,7 +95,7 @@ p {
 }
 
 .left-content {
-  left: -278px;
+  right: -280px;
   width: 200px;
   top: 25px;
   position: absolute;
@@ -105,9 +113,15 @@ p {
   background-color: white;
   border-radius: 6px;
 }
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 18px;
+}
 h1, h2 {
   color: rgb(220,220,220);
-  text-align: center;
+  left: 100px;
 }
 
 a:link {
@@ -124,14 +138,28 @@ a:visited {
 .img-style6 {background-image: url("./images/adorazione-dei-magi.jpg");}
 .img-style7 {background-image: url("./images/saint-jerome.jpg");}
 
-@media only screen and (max-width: 600px) {
-  .right-content {
-    left: -278px;
+@media only screen and (min-width: 960px) {
+
+  .timeline {
+    left: 50%;
+    margin-top: 100px;
+    margin-left: 0px;
   }
 
-  .right::before {
-    left: -20px;
-    border-width: 10px 0 10px 10px;
+  #heading {
+    position: relative;
+    left: 0px;
+    height: 0px;
+    text-align: center;
+  }
+
+  .left-content {
+    left: -280px;
+  }
+
+  .left::before {
+   left: -20px;
+   border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
   }
 }
