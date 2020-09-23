@@ -1,0 +1,193 @@
+
+<DOCTYPE! html>
+  <head>
+      <link rel="stylesheet" href="timeline.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript">        
+      $(document).ready(function() {
+      $('p').hide();
+        $('div').on('click', function(e) {
+          this.element = $('')
+          if (e.target !== this) {
+            
+            return;
+          } else {
+
+            
+            
+              if($(this).hasClass('timeline') || $(this).hasClass('left-content') || $(this).hasClass('right-content')) {
+                return;
+              } else if($(this).hasClass('img-large')) {
+                
+                
+                $(this).addClass('img').removeClass('img-large').find("p").hide();
+              } else {
+
+                $('div.img-large').addClass('img').removeClass('img-large').find("p").hide();
+                $(this).addClass('img-large').removeClass('img').find("p").show();
+              }
+            } 
+
+        });
+      });
+      </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<div id="heading">  <h1>Timeline of Leonardo da Vinci's Major Extant Works (1452 - 1519)</h1>
+  <h2>All images and information are from <a href="https://en.wikipedia.org/wiki/List_of_works_by_Leonardo_da_Vinci">Wikipedia</a></h2>
+</div>
+
+<div class="timeline">
+  <div id="image" class="img img-style1 left">
+
+    <div class="left-content">
+      <h3>The Annunciation (c. 1473-1476)</h3>
+      <p>Generally thought to be the earliest extant work by Leonardo. The work was traditionally attributed to Verrocchio until 1869. It is now almost universally attributed to Leonardo. </p>
+    </div>
+  </div>
+
+  <div class="img img-style2 right">
+    <div class="right-content">
+      <h3>Madonna of the Carnation (c. 1472-1478)</h3>
+      <p>It is generally accepted as a Leonardo, but has some overpainting possibly by a Flemish artist.</p>
+    </div>
+
+  </div>
+  <div class="img img-style3 left">
+    <div class="left-content">
+      <h3>The Baptism of Christ (c. 1469-1476)</h3>
+      <p> Painted by Andrea del Verrocchio, with the angel on the left-hand side by Leonardo.[2] It is generally considered that Leonardo also painted much of the background landscape and the torso of Christ. One of Leonardo's earliest extant works. Vasari's statement that the angel on the left is by Leonardo is confirmed by studies by Bode, Seidlitz and Guthman, and accepted by McCurdy, Wasserman and others.</p>
+    </div>
+
+  </div>
+  <div class="img img-style4 right">
+    <div class="right-content">
+      <h3>Ginevra de' Benci (c. 1474-1480)</h3>
+      <p>The work was proposed as a Leonardo by Waagen in 1866, and supported by Bode. Early 20th-century scholars were vociferous in their disagreement, but most current critics accept both the authorship and the identity of the sitter.</p>
+    </div>
+
+    </div>
+    <div class="img img-style5 left">
+      <div class="left-content">
+        <h3>Benois Madonna</h3>
+        <p>Most critics believe that it coincides with a Madonna mentioned by Leonardo in 1478.</p>
+      </div>
+
+    </div>
+    <div class="img img-style6 right">
+        <div class="right-content">
+          <h3>The Adoration of the Magi (c. 1479-1482)</h3>
+          <p>Carlo Pedretti, the greatest da Vinci scholar states that the results are unambiguous: "From what he showed me ... it's clear that Leonardo's original sketch was gone over by an anonymous painter." Pedretti adds that he was surprised, though not disappointed, that the news was finally getting out – "it's extremely important and should be said because it has to be clarified."</p>
+        </div>
+      </div>
+
+      <div class="img img-style7 left">
+          <div class="left-content">
+            <h3>Saint Jerome in the Wilderness (c. 1480-1482)</h3>
+            <p>Generally accepted as a Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style8 right">
+          <div class="right-content">
+            <h3>Madonna Litta (c. 1481-1495)</h3>
+            <p>Traditionally accepted as a Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style9 left">
+          <div class="left-content">
+            <h3>Portrait of a Musician (c. 1483-1487)</h3>
+            <p>Widely accepted that Leonardo painted the figure's face. Some scholars suggest the body to be the work of his students, Giovanni Antonio Boltraffio and Giovanni Ambrogio de Predis</p>
+          </div>
+        </div>
+
+        <div class="img img-style10 right">
+          <div class="right-content">
+            <h3>Virgin of the Rocks (c. 1483-1493)</h3>
+            <p>Painting Oil on wood panel, transferred to canvas. Unversally accepted as a Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style11 left">
+          <div class="left-content">
+            <h3>Lady with an Ermine (c. 1489-1491)</h3>
+            <p>While controversial in the past, modern scholarship widely attributes the work to Leonardo. The attribution of Ginevra de' Benci supports the attribution of this painting</p>
+          </div>
+        </div>
+
+        <div class="img img-style12 right">
+          <div class="right-content">
+            <h3>La Belle Ferronniere (c. 1490-1498)</h3>
+            <p>Modern scholars still debate the attribution and it is not as widely accepted as other portraits like Ginevra de' Benci, Portrait of a Musician, and Lady with an Ermine.</p>
+          </div>
+        </div>
+
+        <div class="img img-style13 left">
+          <div class="left-content">
+            <h3>The Last Supper (c. 1492-1498)</h3>
+            <p>Universally accepted as a Leanardo original</p>
+          </div>
+        </div>
+
+        <div class="img img-style14 right">
+          <div class="right-content">
+            <h3>Sala delle Asse (c. 1497-1499)</h3>
+            <p>Fresco Tempera on plasterodern. Universally accepted as a Leanardo original piece.</p>
+          </div>
+        </div>
+
+        <div class="img img-style15 left">
+          <div class="left-content">
+            <h3>Portrait of Isabella d'Este (c. 1499-1500)</h3>
+            <p>Chalk drawing Black and red chalk, yellow pastel chalk on paper. Widely accepted as a Leanardo original piece.</p>
+          </div>
+        </div>
+
+        <div class="img img-style16 right">
+          <div class="right-content">
+            <h3>The Virgin and Child with Saint Anne and Saint John the Baptist (c. 1499-1508)</h3>
+            <p>Chalk drawing
+              Charcoal, black and white chalk on tinted paper, mounted on canvas. Universally accepted as a Leanardo original piece.</p>
+          </div>
+        </div>
+
+        <div class="img img-style17 left">
+          <div class="left-content">
+            <h3>Salvator Mundi (c. 1499-1510)</h3>
+            <p>Painting Oil on wood panel. Generally accepted Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style18 right">
+          <div class="right-content">
+            <h3>The Madonna of the Yarnwinder (c. 1501-1508)</h3>
+            <p>Painting Oil on walnut panel. Generally accepted as Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style19 left">
+          <div class="left-content">
+            <h3>Mona Lisa (c. 1502-1516)</h3>
+            <p>Painting Oil on cottonwood (poplar) panel. Universally accepted Leonardo</p>
+          </div>
+        </div>
+
+        <div class="img img-style20 right">
+          <div class="right-content">
+            <h3>La Scapigliata (c. 1506-1508)</h3>
+            <p>Painting
+              Earth, amber and white lead on wood panel. Generally accepted as Leonardo original piece</p>
+          </div>
+        </div>
+
+        <div class="img img-style21 left">
+          <div class="left-content">
+            <h3>Saint John the Baptist (c. 1507–1516)</h3>
+            <p>Painting Oil on walnut panel. While controversial in the past, modern scholarship widely attributes the work to Leonardo. Scientific evidence in the second half of the 20th century has furthered this attribution.</p>
+          </div>
+        </div>
+</div>
+</body>
+</html>
